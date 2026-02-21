@@ -13,7 +13,7 @@ PlasmoidItem {
     ListModel { id: hostsModel }
 
     function notify(summary, body, icon) {
-        executable.connectSource("notify-send -a 'Host Monitor' -u critical -i '" + icon + "' '" + summary + "' '" + body + "'")
+        executable.connectSource("notify-send -u normal -t 3000 -a 'Host Monitor' -i '" + icon + "' '" + summary + "' '" + body + "'")
         executable.connectSource("paplay /usr/share/sounds/freedesktop/stereo/bell.oga")
     }
 
