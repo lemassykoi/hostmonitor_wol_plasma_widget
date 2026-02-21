@@ -1,4 +1,4 @@
-# Very simple Widget for Plasma KDE 6
+# Very simple Widget for KDE Plasma 6
 
 - Host Monitor (ping)
 - Wake on LAN
