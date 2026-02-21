@@ -1,0 +1,19 @@
+{
+    "KPlugin": {
+        "Id": "org.ipc.hostmonitor",
+        "Name": "Host Monitor & WoL",
+        "Description": "Affiche le statut d'un hôte et permet de le réveiller",
+        "Icon": "network-server",
+        "Category": "Network",
+        "Version": "1.0",
+        "License": "GPL-3.0+",
+        "Authors": [
+            {
+                "Name": "lemassykoi",
+                "Email": "lemassykoi@github.com"
+            }
+        ]
+    },
+    "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0"
+}
