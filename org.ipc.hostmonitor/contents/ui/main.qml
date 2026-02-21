@@ -25,12 +25,11 @@ PlasmoidItem {
             for (var i = 0; i < hostsModel.count; i++) {
                 if (source === "ping -c 1 -W 2 " + hostsModel.get(i).ip) {
                     var wasAlive = hostsModel.get(i).alive
-                    var wasChecking = hostsModel.get(i).checking
                     var isAlive = data["exit code"] === 0
                     hostsModel.setProperty(i, "alive", isAlive)
                     hostsModel.setProperty(i, "checking", false)
 
-                    if (root.initialCheckDone && !wasChecking && wasAlive !== isAlive) {
+                    if (root.initialCheckDone && wasAlive !== isAlive) {
                         var host = hostsModel.get(i)
                         var status = isAlive ? "en ligne ✅" : "hors ligne ❌"
                         var icon = isAlive ? "network-connect" : "network-disconnect"
